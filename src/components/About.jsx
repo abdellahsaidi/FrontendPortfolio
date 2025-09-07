@@ -3,7 +3,6 @@ import { FiDownload } from "react-icons/fi";
 import profilePic from "../assets/images/profil.png";
 import API_BASE_URL from "../config";
 
-
 export default function About() {
   const [loading, setLoading] = useState(false);
 
@@ -110,8 +109,8 @@ export default function About() {
       </div>
 
       {/* Terminal Style Box */}
-      <div className="flex-1 mt-10 md:mt-0 bg-black border border-blue-700 rounded-lg p-4 shadow-lg w-full md:w-96">
-        <pre className="text-blue-500 font-mono text-sm">
+      <div className="flex-1 mt-6 md:mt-0 bg-black border border-blue-700 rounded-lg p-4 shadow-lg w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl overflow-x-auto">
+        <pre className="text-blue-500 font-mono text-xs sm:text-sm md:text-base whitespace-pre-wrap break-words">
           {`// Terminal
 
 $ py manage.py runserver
