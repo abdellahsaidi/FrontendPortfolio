@@ -15,8 +15,8 @@ export default function Details({ experience = 2, educationYear = 2025 }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setAnimated(true);
-            animateNumber(setExpCount, 0, experience, 1000);
-            animateNumber(setEduYear, 2000, educationYear, 1000);
+            animateNumber(setExpCount, 0, experience, 1300);
+            animateNumber(setEduYear, 2000, educationYear, 1300);
           }
         });
       },
