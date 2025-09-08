@@ -9,8 +9,8 @@ import Footer from "./components/Footer";
 
 export default function App() {
   useEffect(() => {
-    
-    fetch(`${import.meta.env.VITE_API_URL}/notify-visit/`)
+    // Call your Django backend API to notify visit
+    fetch("https://portfolio-backend-0w1g.onrender.com/notify-visit/")
       .then((res) => {
         if (res.ok) {
           console.log("✅ Visit notification sent successfully");
